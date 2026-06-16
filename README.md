@@ -2,41 +2,41 @@
 
 ## Overview
 
-Customer churn is one of the most critical challenges faced by subscription-based businesses. This project focuses on analyzing customer behavior, identifying factors contributing to customer attrition, and building a machine learning solution to predict customer churn.
+Customer churn is one of the biggest challenges faced by subscription-based businesses. This project focuses on analyzing customer behavior, identifying churn patterns, and building a machine learning model to predict customer attrition.
 
-The project combines Data Analytics, Machine Learning, SQL, and Business Intelligence concepts to provide actionable insights that help organizations improve customer retention and reduce revenue loss.
+The project combines Data Analytics, SQL, Machine Learning, and Business Intelligence concepts to generate actionable insights that can help organizations improve customer retention and reduce revenue loss.
 
 ---
 
 ## Business Problem
 
-Customer retention is significantly more cost-effective than customer acquisition. Organizations need to understand:
+Customer retention is more cost-effective than customer acquisition. Companies need to understand:
 
 - Why customers leave
-- Which customer segments are at high risk
-- What factors influence churn behavior
-- How retention strategies can be improved
+- Which customers are at risk of churning
+- Factors affecting customer retention
+- How to improve customer loyalty
 
 This project addresses these challenges through data-driven analysis and predictive modeling.
 
 ---
 
-## Objectives
+## Project Objectives
 
 - Analyze customer behavior and churn trends
 - Identify key factors affecting customer retention
 - Perform data cleaning and preprocessing
 - Build a machine learning model for churn prediction
 - Generate actionable business insights
-- Support data-driven decision making
+- Support data-driven decision-making
 
 ---
 
 ## Dataset
 
-**Dataset Used:** IBM Telco Customer Churn Dataset
+**Dataset:** IBM Telco Customer Churn Dataset
 
-The dataset contains customer information including:
+The dataset contains customer information such as:
 
 - Customer ID
 - Gender
@@ -44,6 +44,7 @@ The dataset contains customer information including:
 - Partner Status
 - Dependents
 - Tenure
+- Phone Service
 - Internet Service
 - Contract Type
 - Payment Method
@@ -59,6 +60,7 @@ The dataset contains customer information including:
 | Features | 21 |
 | Churned Customers | 1869 |
 | Retained Customers | 5174 |
+| Churn Rate | 26.54% |
 
 ---
 
@@ -68,11 +70,12 @@ The dataset contains customer information including:
 |------------|---------|
 | Python | Data Analysis & Machine Learning |
 | Pandas | Data Cleaning & Transformation |
-| NumPy | Numerical Operations |
-| Scikit-Learn | Churn Prediction Model |
-| SQL | Business Queries & Analysis |
+| NumPy | Numerical Computation |
+| Scikit-Learn | Machine Learning |
+| SQL | Business Analysis Queries |
+| Matplotlib | Data Visualization |
 | Git & GitHub | Version Control |
-| Power BI | Business Intelligence Dashboard *(Planned)* |
+| Power BI | Dashboard Development (Planned) |
 
 ---
 
@@ -80,7 +83,6 @@ The dataset contains customer information including:
 
 ```text
 Customer-Analytics-Churn-Prediction/
-
 │
 ├── Dataset/
 │   ├── Telco-Customer-Churn.csv
@@ -89,32 +91,37 @@ Customer-Analytics-Churn-Prediction/
 ├── Python/
 │   ├── data_cleaning.py
 │   ├── analysis.py
-│   └── churn_prediction.py
+│   ├── churn_prediction.py
+│   └── visualizations.py
 │
 ├── SQL/
 │   └── churn_queries.sql
 │
 ├── PowerBI/
+│   └── README.md
 │
 ├── Screenshots/
+│   ├── churn_distribution.png
+│   ├── contract_analysis.png
+│   └── model_accuracy.png
 │
 ├── requirements.txt
-│
+├── .gitignore
 └── README.md
 ```
 
 ---
 
-## Workflow
+## Project Workflow
 
 ### 1. Data Cleaning
 
 Performed:
 
-- Data loading
-- Duplicate removal
+- Dataset loading
 - Data validation
-- Missing value inspection
+- Duplicate removal
+- Missing value analysis
 - Data type conversion
 
 Output:
@@ -125,14 +132,14 @@ cleaned_churn.csv
 
 ---
 
-### 2. Exploratory Data Analysis
+### 2. Exploratory Data Analysis (EDA)
 
 Analyzed:
 
 - Customer churn distribution
-- Contract type impact
-- Monthly charges
-- Customer tenure
+- Contract type impact on churn
+- Monthly charges analysis
+- Customer tenure analysis
 - Customer retention trends
 
 ---
@@ -146,7 +153,7 @@ Algorithm Used:
 Steps:
 
 - Feature Engineering
-- Data Encoding
+- One-Hot Encoding
 - Train-Test Split
 - Model Training
 - Model Evaluation
@@ -167,11 +174,19 @@ The model successfully predicts customer churn behavior using customer demograph
 
 ## Key Findings
 
-### 1. Churn Rate
+### 1. Customer Churn Rate
 
-- Total Customers: 7043
-- Churned Customers: 1869
-- Churn Rate: 26.54%
+| Metric | Value |
+|----------|----------|
+| Total Customers | 7043 |
+| Churned Customers | 1869 |
+| Churn Rate | 26.54% |
+
+**Insight:**
+
+Approximately 1 in 4 customers leave the company, indicating a significant retention challenge.
+
+---
 
 ### 2. Contract Type Analysis
 
@@ -182,11 +197,12 @@ The model successfully predicts customer churn behavior using customer demograph
 | Two Year | 48 |
 
 **Insight:**
-Month-to-month customers are significantly more likely to churn.
+
+Customers with month-to-month contracts are significantly more likely to churn than customers with long-term contracts.
 
 ---
 
-### 3. Monthly Charges
+### 3. Monthly Charges Analysis
 
 | Customer Type | Average Monthly Charges |
 |--------------|-------------------------|
@@ -194,11 +210,12 @@ Month-to-month customers are significantly more likely to churn.
 | Churned Customers | 74.44 |
 
 **Insight:**
-Customers with higher monthly charges tend to churn more frequently.
+
+Customers paying higher monthly charges are more likely to churn.
 
 ---
 
-### 4. Customer Tenure
+### 4. Customer Tenure Analysis
 
 | Customer Type | Average Tenure |
 |--------------|---------------|
@@ -206,13 +223,12 @@ Customers with higher monthly charges tend to churn more frequently.
 | Churned Customers | 17.98 Months |
 
 **Insight:**
-Customers with shorter tenure are more likely to leave the company.
+
+Customers with shorter tenure are at a higher risk of leaving the company.
 
 ---
 
 ## Business Recommendations
-
-Based on the analysis:
 
 ### Recommendation 1
 
@@ -220,7 +236,7 @@ Promote long-term contracts through discounts and loyalty programs.
 
 ### Recommendation 2
 
-Improve onboarding experience for new customers.
+Improve customer onboarding and engagement during the first year.
 
 ### Recommendation 3
 
@@ -228,7 +244,7 @@ Provide personalized offers for customers with high monthly charges.
 
 ### Recommendation 4
 
-Improve customer support and engagement strategies.
+Improve customer support and proactive retention strategies.
 
 ---
 
@@ -239,7 +255,7 @@ The project includes SQL queries for:
 - Total Customer Analysis
 - Churn Rate Calculation
 - Contract-wise Churn Analysis
-- Revenue Insights
+- Monthly Charges Analysis
 - Customer Segmentation
 
 ---
@@ -250,20 +266,36 @@ The project includes SQL queries for:
 - Streamlit Web Application
 - Advanced Machine Learning Models
 - Customer Lifetime Value Prediction
-- Real-Time Churn Prediction System
-- Cloud Deployment (AWS/GCP)
+- Real-Time Churn Prediction
+- Cloud Deployment (AWS/GCP/Azure)
+
+---
+
+## Project Screenshots
+
+### Customer Churn Distribution
+
+![Churn Distribution](Screenshots/churn_distribution.png)
+
+### Contract Type vs Churn
+
+![Contract Analysis](Screenshots/contract_analysis.png)
+
+### Model Accuracy
+
+![Model Accuracy](Screenshots/model_accuracy.png)
 
 ---
 
 ## Business Impact
 
-This project demonstrates how data analytics and machine learning can help organizations:
+This project demonstrates how Data Analytics and Machine Learning can help organizations:
 
-- Reduce customer attrition
+- Reduce customer churn
 - Improve customer retention
 - Increase revenue
-- Support strategic decision-making
-- Identify high-risk customers proactively
+- Identify high-risk customers
+- Support strategic business decisions
 
 ---
 
@@ -272,6 +304,8 @@ This project demonstrates how data analytics and machine learning can help organ
 **Amruta Kanchagar**
 
 Aspiring Data Analyst | Python | SQL | Power BI | Machine Learning
+
+GitHub: https://github.com/AmrutaKanchagar
 
 ---
 
