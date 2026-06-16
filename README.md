@@ -1,4 +1,4 @@
-Customer Analytics & Churn Prediction Platform
+# Customer Analytics & Churn Prediction Platform
 
 Project Overview
 
