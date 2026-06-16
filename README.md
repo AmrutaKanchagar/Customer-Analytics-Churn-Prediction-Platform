@@ -1,16 +1,16 @@
 # Customer Analytics & Churn Prediction Platform
 
-Project Overview
+## Overview
 
-Customer churn is one of the most critical challenges faced by subscription-based businesses. This project focuses on analyzing customer behavior, identifying factors that contribute to customer attrition, and building a predictive analytics solution to support customer retention strategies.
+Customer churn is one of the most critical challenges faced by subscription-based businesses. This project focuses on analyzing customer behavior, identifying factors contributing to customer attrition, and building a machine learning solution to predict customer churn.
 
-The platform combines data analytics, machine learning, SQL-based querying, and business intelligence visualization to provide actionable insights for decision-makers.
+The project combines Data Analytics, Machine Learning, SQL, and Business Intelligence concepts to provide actionable insights that help organizations improve customer retention and reduce revenue loss.
 
 ---
 
-Business Problem
+## Business Problem
 
-Customer acquisition is often more expensive than customer retention. Organizations need to understand:
+Customer retention is significantly more cost-effective than customer acquisition. Organizations need to understand:
 
 - Why customers leave
 - Which customer segments are at high risk
@@ -21,163 +21,260 @@ This project addresses these challenges through data-driven analysis and predict
 
 ---
 
-Project Objectives
+## Objectives
 
-- Perform customer behavior analysis
-- Identify churn patterns and key risk factors
-- Build a machine learning model to predict customer churn
+- Analyze customer behavior and churn trends
+- Identify key factors affecting customer retention
+- Perform data cleaning and preprocessing
+- Build a machine learning model for churn prediction
 - Generate actionable business insights
-- Create interactive dashboards for decision-making
+- Support data-driven decision making
 
 ---
 
-Tech Stack
+## Dataset
 
-Technology| Purpose
-Python| Data cleaning, analysis, machine learning
-Pandas| Data manipulation and preprocessing
-Scikit-Learn| Churn prediction model
-SQL| Business queries and analytics
-Power BI| Interactive dashboards and visualization
-Git & GitHub| Version control and project management
+**Dataset Used:** IBM Telco Customer Churn Dataset
 
----
-
-Dataset
-
-Dataset: IBM Telco Customer Churn Dataset
-
-The dataset contains customer demographics, subscription details, billing information, tenure, service usage, and churn status.
-
-Key Attributes:
+The dataset contains customer information including:
 
 - Customer ID
 - Gender
-- Senior Citizen
+- Senior Citizen Status
+- Partner Status
+- Dependents
 - Tenure
+- Internet Service
 - Contract Type
+- Payment Method
 - Monthly Charges
 - Total Charges
-- Internet Service
-- Payment Method
 - Churn Status
 
----
+### Dataset Statistics
 
-Project Workflow
-
-1. Data Collection
-2. Data Cleaning and Preprocessing
-3. Exploratory Data Analysis (EDA)
-4. Customer Segmentation
-5. Churn Prediction Modeling
-6. Business Insight Generation
-7. Dashboard Development
+| Metric | Value |
+|----------|----------|
+| Total Records | 7043 |
+| Features | 21 |
+| Churned Customers | 1869 |
+| Retained Customers | 5174 |
 
 ---
 
-Key Analysis Questions
+## Technology Stack
 
-- Which customer segments have the highest churn rate?
-- How does contract type impact customer retention?
-- Does customer tenure influence churn probability?
-- What is the relationship between monthly charges and churn?
-- Which customers contribute the highest revenue?
-
----
-
-Machine Learning Approach
-
-The churn prediction model is developed using Random Forest Classification.
-
-Model Inputs
-
-- Customer Demographics
-- Contract Information
-- Service Usage
-- Billing Information
-- Customer Tenure
-
-Model Output
-
-- Churn Likelihood (Yes/No)
-
-The model helps identify customers who are likely to leave, enabling proactive retention efforts.
+| Technology | Purpose |
+|------------|---------|
+| Python | Data Analysis & Machine Learning |
+| Pandas | Data Cleaning & Transformation |
+| NumPy | Numerical Operations |
+| Scikit-Learn | Churn Prediction Model |
+| SQL | Business Queries & Analysis |
+| Git & GitHub | Version Control |
+| Power BI | Business Intelligence Dashboard *(Planned)* |
 
 ---
 
-SQL Analytics
+## Project Structure
 
-Business-oriented SQL queries are used to:
-
-- Calculate churn rate
-- Analyze contract-wise churn
-- Measure revenue contribution
-- Identify high-value customers
-- Compare retained vs churned customer groups
-
----
-
-Dashboard Features
-
-Executive Dashboard
-
-- Total Customers
-- Churn Rate
-- Retention Rate
-- Revenue Overview
-
-Customer Analytics
-
-- Churn by Contract Type
-- Churn by Gender
-- Churn by Internet Service
-- Customer Segmentation
-
-Revenue Analytics
-
-- Revenue by Customer Group
-- Revenue Loss due to Churn
-- High-Value Customer Analysis
-
----
-
-Business Impact
-
-This project demonstrates how analytics can support business decision-making by:
-
-- Reducing customer attrition
-- Improving customer retention strategies
-- Identifying high-risk customers
-- Supporting revenue growth initiatives
-
----
-
-Repository Structure
-
+```text
 Customer-Analytics-Churn-Prediction/
+
 │
 ├── Dataset/
+│   ├── Telco-Customer-Churn.csv
+│   └── cleaned_churn.csv
+│
 ├── Python/
+│   ├── data_cleaning.py
+│   ├── analysis.py
+│   └── churn_prediction.py
+│
 ├── SQL/
+│   └── churn_queries.sql
+│
 ├── PowerBI/
+│
 ├── Screenshots/
+│
+├── requirements.txt
+│
 └── README.md
+```
 
 ---
 
-Future Enhancements
+## Workflow
 
-- Deployment using Streamlit
-- Real-time churn prediction
-- Customer lifetime value analysis
-- Advanced machine learning models
-- Cloud integration (AWS/GCP)
+### 1. Data Cleaning
+
+Performed:
+
+- Data loading
+- Duplicate removal
+- Data validation
+- Missing value inspection
+- Data type conversion
+
+Output:
+
+```text
+cleaned_churn.csv
+```
 
 ---
 
-Author
+### 2. Exploratory Data Analysis
 
-Amruta Kanchagar
+Analyzed:
+
+- Customer churn distribution
+- Contract type impact
+- Monthly charges
+- Customer tenure
+- Customer retention trends
+
+---
+
+### 3. Machine Learning
+
+Algorithm Used:
+
+- Random Forest Classifier
+
+Steps:
+
+- Feature Engineering
+- Data Encoding
+- Train-Test Split
+- Model Training
+- Model Evaluation
+
+---
+
+## Model Performance
+
+### Churn Prediction Accuracy
+
+```text
+78.92%
+```
+
+The model successfully predicts customer churn behavior using customer demographic and service-related attributes.
+
+---
+
+## Key Findings
+
+### 1. Churn Rate
+
+- Total Customers: 7043
+- Churned Customers: 1869
+- Churn Rate: 26.54%
+
+### 2. Contract Type Analysis
+
+| Contract Type | Churned Customers |
+|---------------|-------------------|
+| Month-to-Month | 1655 |
+| One Year | 166 |
+| Two Year | 48 |
+
+**Insight:**
+Month-to-month customers are significantly more likely to churn.
+
+---
+
+### 3. Monthly Charges
+
+| Customer Type | Average Monthly Charges |
+|--------------|-------------------------|
+| Retained Customers | 61.27 |
+| Churned Customers | 74.44 |
+
+**Insight:**
+Customers with higher monthly charges tend to churn more frequently.
+
+---
+
+### 4. Customer Tenure
+
+| Customer Type | Average Tenure |
+|--------------|---------------|
+| Retained Customers | 37.57 Months |
+| Churned Customers | 17.98 Months |
+
+**Insight:**
+Customers with shorter tenure are more likely to leave the company.
+
+---
+
+## Business Recommendations
+
+Based on the analysis:
+
+### Recommendation 1
+
+Promote long-term contracts through discounts and loyalty programs.
+
+### Recommendation 2
+
+Improve onboarding experience for new customers.
+
+### Recommendation 3
+
+Provide personalized offers for customers with high monthly charges.
+
+### Recommendation 4
+
+Improve customer support and engagement strategies.
+
+---
+
+## SQL Analytics
+
+The project includes SQL queries for:
+
+- Total Customer Analysis
+- Churn Rate Calculation
+- Contract-wise Churn Analysis
+- Revenue Insights
+- Customer Segmentation
+
+---
+
+## Future Enhancements
+
+- Power BI Interactive Dashboard
+- Streamlit Web Application
+- Advanced Machine Learning Models
+- Customer Lifetime Value Prediction
+- Real-Time Churn Prediction System
+- Cloud Deployment (AWS/GCP)
+
+---
+
+## Business Impact
+
+This project demonstrates how data analytics and machine learning can help organizations:
+
+- Reduce customer attrition
+- Improve customer retention
+- Increase revenue
+- Support strategic decision-making
+- Identify high-risk customers proactively
+
+---
+
+## Author
+
+**Amruta Kanchagar**
 
 Aspiring Data Analyst | Python | SQL | Power BI | Machine Learning
+
+---
+
+## License
+
+This project is developed for educational and portfolio purposes.
