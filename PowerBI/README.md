@@ -142,22 +142,16 @@ Use customer segmentation and predictive analytics for proactive retention campa
 
 ---
 
-## Dashboard Preview
-
-Add screenshots here:
-
-```markdown
-<img width="981" height="552" alt="image" src="https://github.com/user-attachments/assets/ee0bce09-4ff2-4772-9aef-ce6ff1f58495" />
+Dashboard Preview
 
 
-<img width="982" height="554" alt="image" src="https://github.com/user-attachments/assets/4f964239-b38f-408f-b20e-e02d37f00783" />
+<img width="983" height="554" alt="image" src="https://github.com/user-attachments/assets/cc0ad8e6-c5be-45d6-bd50-e10a45795cb5" />
 
 
-<img width="982" height="555" alt="image" src="https://github.com/user-attachments/assets/96742ad6-2a0e-4fb9-aba8-b4465fc12529" />
+<img width="983" height="557" alt="image" src="https://github.com/user-attachments/assets/a895a351-a26d-4714-9ee2-97dc4ce00671" />
 
-```
 
----
+<img width="982" height="555" alt="image" src="https://github.com/user-attachments/assets/e13df6a6-dd37-46f7-8924-5e6c4eb0833d" />
 
 ## Author
 
