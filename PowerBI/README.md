@@ -1,164 +1,170 @@
-# Customer Churn Analytics Dashboard
+# 📊 Customer Churn Analytics & Prediction Dashboard
 
 ## Overview
 
-This Power BI dashboard is designed to provide business insights into customer churn behavior using the IBM Telco Customer Churn Dataset.
-
-The dashboard helps stakeholders monitor customer retention, identify churn patterns, and support data-driven decision-making through interactive visualizations and key performance indicators (KPIs).
+This project presents an interactive **Power BI Customer Churn Analytics Dashboard** built using the **IBM Telco Customer Churn Dataset**. The dashboard provides insights into customer behavior, churn patterns, contract types, service usage, and retention trends. It helps businesses identify high-risk customers and make data-driven decisions to improve customer retention.
 
 ---
 
-## Dashboard Objectives
+## Objectives
 
-- Monitor customer churn rate
-- Analyze customer retention trends
-- Identify high-risk customer segments
-- Evaluate contract-wise churn behavior
-- Understand the impact of monthly charges on churn
-- Support customer retention strategies
-
----
-
-## Key Performance Indicators (KPIs)
-
-| KPI | Value |
-|------|--------|
-| Total Customers | 7043 |
-| Churned Customers | 1869 |
-| Retention Rate | 73.46% |
-| Churn Rate | 26.54% |
-| Model Accuracy | 78.92% |
-
----
-
-## Dashboard Components
-
-### Executive Summary
-
-Provides a high-level overview of:
-
-- Total Customers
-- Churned Customers
-- Retention Rate
-- Churn Rate
-- Machine Learning Model Accuracy
-
----
-
-### Customer Churn Distribution
-
-**Visualization:** Donut Chart
-
-Displays the proportion of:
-
-- Retained Customers
-- Churned Customers
-
-**Business Insight:**
-
-Approximately 26.54% of customers have churned, indicating opportunities for retention improvement.
-
----
-
-### Contract Type vs Churn
-
-**Visualization:** Clustered Column Chart
-
-Analyzes customer churn across:
-
-- Month-to-Month Contracts
-- One-Year Contracts
-- Two-Year Contracts
-
-**Business Insight:**
-
-Customers with month-to-month contracts show the highest churn rate.
-
----
-
-### Monthly Charges Analysis
-
-**Visualization:** Bar Chart
-
-Compares average monthly charges between:
-
-- Retained Customers
-- Churned Customers
-
-**Business Insight:**
-
-Customers paying higher monthly charges are more likely to churn.
-
----
-
-### Customer Tenure Analysis
-
-**Visualization:** Bar Chart
-
-Compares average customer tenure between:
-
-- Retained Customers
-- Churned Customers
-
-**Business Insight:**
-
-Customers with lower tenure are at a higher risk of leaving.
-
----
-
-## Dashboard Preview
-
-After creating the dashboard, add a screenshot below:
-
-```markdown
-![Power BI Dashboard](../Screenshots/powerbi_dashboard.png)
-```
-
----
-
-## Business Recommendations
-
-### 1. Promote Long-Term Contracts
-
-Offer discounts and loyalty benefits to encourage customers to switch from month-to-month plans.
-
-### 2. Improve Customer Onboarding
-
-Focus on customer engagement during the first year to improve retention.
-
-### 3. Monitor High-Value Customers
-
-Provide personalized offers and support for customers with higher monthly charges.
-
-### 4. Proactive Retention Strategy
-
-Identify customers at risk of churn and implement targeted retention campaigns.
-
----
-
-## Future Enhancements
-
-- Interactive Drill-Through Reports
-- Customer Segmentation Analysis
-- Revenue Impact Dashboard
-- Customer Lifetime Value Analysis
-- Real-Time Churn Monitoring
-- AI-Based Predictive Analytics
+* Monitor customer churn and retention metrics.
+* Identify high-risk customer segments.
+* Analyze contract-wise churn behavior.
+* Understand the effect of monthly charges and tenure on churn.
+* Explore service-related factors influencing churn.
+* Support proactive customer retention strategies.
 
 ---
 
 ## Dataset
 
-IBM Telco Customer Churn Dataset
+* **Source:** IBM Telco Customer Churn Dataset
+* **Records:** 7,043
+* **Features:** 21
+* **Target Variable:** Churn (Yes / No)
 
-Records: 7043
+---
 
-Features: 21
+## Tools & Technologies
+
+* Power BI
+* DAX
+* Data Modeling
+* Data Visualization
+* Microsoft Excel
+* IBM Telco Customer Churn Dataset
+
+---
+
+## Dashboard Pages
+
+### Page 1: Executive Summary Dashboard
+
+#### Key Performance Indicators (KPIs)
+
+| KPI               | Value  |
+| ----------------- | ------ |
+| Total Customers   | 7,043  |
+| Churned Customers | 1,869  |
+| Churn Rate        | 26.54% |
+| Retention Rate    | 73.46% |
+| Model Accuracy    | 78.92% |
+
+#### Visualizations
+
+* Churn Distribution
+* Contract Type vs Churn
+* Average Monthly Charges by Churn
+* Average Customer Tenure by Churn
+
+#### Key Insights
+
+* Customers with month-to-month contracts show the highest churn.
+* Customers paying higher monthly charges are more likely to leave.
+* Customers with lower tenure are more prone to churn.
+
+---
+
+### Page 2: Customer Profile & Churn Analysis
+
+#### Visualizations
+
+* Gender Distribution
+* Senior Citizen Distribution
+* Partner Status
+* Payment Method vs Churn
+* Contract Type vs Churn
+* Internet Service vs Churn
+* Online Security Impact on Churn
+* Tech Support Impact on Churn
+* Device Protection Impact on Churn
+* Tenure Distribution
+* Monthly Charges Distribution
+
+#### Key Insights
+
+* Fiber optic users exhibit higher churn rates.
+* Customers without Online Security and Tech Support are more likely to churn.
+* Electronic check payment customers have higher churn probability.
+* New customers are more vulnerable to churn.
+
+---
+
+### Page 3: Churn Prediction Insights & Recommendations
+
+#### Visualizations
+
+* Model Performance Metrics
+* Feature Importance (Top 10)
+* Churn Risk Segmentation
+* High-Risk Customer Profile
+* Business Recommendations
+* Predicted Churn Probability Distribution
+
+#### Key Insights
+
+* Month-to-month contracts are the strongest indicator of churn.
+* High monthly charges and low tenure increase churn risk.
+* Lack of support services contributes significantly to customer attrition.
+
+---
+
+## Business Recommendations
+
+### Promote Long-Term Contracts
+
+Provide discounts and loyalty benefits to encourage customers to switch from month-to-month plans.
+
+### Improve Customer Onboarding
+
+Focus on customer engagement during the first year.
+
+### Enhance Support Services
+
+Promote Online Security and Tech Support packages to improve retention.
+
+### Target High-Risk Customers
+
+Use customer segmentation and predictive analytics for proactive retention campaigns.
+
+---
+
+## Future Enhancements
+
+* Customer Lifetime Value Analysis
+* Revenue Impact Dashboard
+* Customer Segmentation
+* Drill-Through Reports
+* Real-Time Churn Monitoring
+* Machine Learning-Based Churn Prediction
+* AI-Powered Customer Retention Recommendations
+
+---
+
+## Dashboard Preview
+
+Add screenshots here:
+
+```markdown
+<img width="981" height="552" alt="image" src="https://github.com/user-attachments/assets/ee0bce09-4ff2-4772-9aef-ce6ff1f58495" />
+
+
+<img width="982" height="554" alt="image" src="https://github.com/user-attachments/assets/4f964239-b38f-408f-b20e-e02d37f00783" />
+
+
+<img width="982" height="555" alt="image" src="https://github.com/user-attachments/assets/96742ad6-2a0e-4fb9-aba8-b4465fc12529" />
+
+```
 
 ---
 
 ## Author
 
-Amruta Kanchagar
+**Amruta Kanchagar**
 
-Data Analytics | Python | SQL | Power BI | Machine Learning
+Data Analytics | Power BI | SQL | Python | Machine Learning
+
+LinkedIn: linkedin.com/in/amruta-k-kanchagar
+
+GitHub: github.com/AmrutaKanchagar
