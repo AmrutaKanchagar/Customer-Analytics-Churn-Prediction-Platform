@@ -293,22 +293,14 @@ Includes queries for:
 # Dashboard Preview
 
 ### Executive Summary Dashboard
-
-```markdown
-![Page 1](Screenshots/page1.png)
-```
+<img width="983" height="554" alt="image" src="https://github.com/user-attachments/assets/cc0ad8e6-c5be-45d6-bd50-e10a45795cb5" />
 
 ### Customer Profile & Churn Analysis
-
-```markdown
-![Page 2](Screenshots/page2.png)
-```
+<img width="983" height="557" alt="image" src="https://github.com/user-attachments/assets/a895a351-a26d-4714-9ee2-97dc4ce00671" />
 
 ### Churn Prediction Insights & Recommendations
+<img width="982" height="555" alt="image" src="https://github.com/user-attachments/assets/e13df6a6-dd37-46f7-8924-5e6c4eb0833d" />
 
-```markdown
-![Page 3](Screenshots/page3.png)
-```
 
 ---
 
